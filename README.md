@@ -45,7 +45,6 @@ Lol task/
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/) (a program that lets you run JavaScript on your computer)
-- [npm](https://www.npmjs.com/) (comes with Node.js, helps you install needed files)
 
 ---
 
@@ -60,7 +59,7 @@ You only need to do this once for each part.
 1. Open a terminal (Command Prompt or PowerShell).
 2. Go to the backend folder:
    ```sh
-   cd "Lol task\backend"
+   cd "lolTask\backend"
    ```
 3. Install the needed files:
    ```sh
@@ -72,7 +71,7 @@ You only need to do this once for each part.
 1. Open a new terminal window.
 2. Go to the frontend folder:
    ```sh
-   cd "Lol task\frontend"
+   cd "lolTask\frontend"
    ```
 3. Install the needed files:
    ```sh
