@@ -1,0 +1,94 @@
+
+.lol-theme-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;  position: relative;
+  padding: 1rem;
+}
+
+.lol-theme-card {
+  background: linear-gradient(145deg, rgba(10, 20, 40, 0.499), rgba(20, 35, 65, 0.515));  border: 2px solid #c89b3c;
+  border-image: linear-gradient(to bottom right, #c89b3c, #785a28) 1;
+  box-shadow: 0 0 15px #c89b3c, 0 0 30px #c89b3c33, inset 0 0 10px rgba(200, 155, 60, 0.2);
+  color: #e0e0e0;
+  max-width: 720px;
+  width: 100%;
+  border-radius: 8px;
+  position: relative;
+  backdrop-filter: blur(3px) brightness(0.9);
+  -webkit-backdrop-filter: blur(3px) brightness(0.9);
+}
+
+.lol-theme-card-header {  padding: 1.5rem 2rem;
+  border-bottom: 1px solid rgba(200, 155, 60, 0.3);
+}
+
+.lol-theme-title {  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 2.6rem;
+  font-weight: bold;
+  color: #f0e6d2;
+  text-shadow: 0 1px 1px #000, 0 0 8px #c89b3c, 0 0 12px #c89b3c;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.lol-theme-subtitle {
+  font-family: 'Georgia', 'Times New Roman', serif;  font-size: 1.3rem;
+  color: #a0b0c0;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.lol-theme-card-body {
+  padding: 2rem;
+}
+
+.lol-theme-text {  font-family: 'Verdana', 'Geneva', sans-serif;
+  font-size: 1.05rem;
+  color: #c0c8d0;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+}
+
+.lol-theme-button {  font-family: 'Trajan Pro', 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  font-size: 1.1rem !important;
+  padding: 0.75rem 2.2rem !important;
+  background: linear-gradient(to bottom, #005a82, #004869);
+  border: 2px solid #0ac6e3;
+  color: #e0f2f7 !important;
+  border-radius: 4px !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3), inset 0 1px 1px rgba(10, 198, 227, 0.3);
+  transition: all 0.2s ease-out !important;
+}
+
+.lol-theme-button:hover, .lol-theme-button:focus {
+  background: linear-gradient(to bottom, #006a99, #005a82) !important;
+  border-color: #2ce0ff !important;
+  color: #ffffff !important;
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4), 0 0 15px rgba(10, 198, 227, 0.5), inset 0 1px 1px rgba(10, 198, 227, 0.5);
+}
+
+@keyframes summonRiftCard {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.9);
+    filter: brightness(0.5) blur(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: brightness(1) blur(0);
+  }
+}
+
+.lol-theme-card-animate {
+  animation: summonRiftCard 0.9s cubic-bezier(0.1, 0.7, 0.3, 1) 0.2s forwards;
+  opacity: 0;
+}

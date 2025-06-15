@@ -1,0 +1,165 @@
+.mvp-page-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.mvp-card {
+  width: 100%;
+  max-width: 500px;
+  background: rgba(10, 15, 25, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  padding: 2.5rem;
+  text-align: center;
+  color: #e9ecef;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.mvp-header {
+  margin-bottom: 0.5rem;
+}
+
+.mvp-avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 4px solid #ffc107;
+  box-shadow: 0 0 20px rgba(255, 193, 7, 0.5);
+  margin-bottom: 1rem;
+}
+
+.mvp-summoner-name {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.mvp-champion-name {
+  font-size: 1.25rem;
+  color: #adb5bd;
+  font-weight: normal;
+  margin: 0;
+}
+
+.mvp-primary-stat {
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.mvp-kda-value {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffc107;
+}
+
+.mvp-kda-breakdown {
+  color: #ced4da;
+  font-size: 1.1rem;
+}
+
+.mvp-stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.mvp-stat-item {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.mvp-stat-value {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #fff;
+  line-height: 1;
+}
+
+.mvp-stat-label {
+  font-size: 0.9rem;
+  color: #adb5bd;
+  margin-top: 0.25rem;
+}
+
+.blue-team-text {
+  color: #58a6ff;
+}
+
+.red-team-text {
+  color: #ff7b72;
+}
+
+.back-button {
+  display: inline-block;
+  background: rgba(0, 123, 255, 0.1);
+  border: 1px solid rgba(0, 123, 255, 0.5);
+  color: #c4ddff;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 1rem;
+}
+
+.back-button:hover {
+  background: #007bff;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.7);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 576px) {
+  .mvp-card {
+    padding: 1.5rem;
+  }
+  .mvp-avatar {
+    width: 100px;
+    height: 100px;
+  }
+  .mvp-summoner-name {
+    font-size: 2rem;
+  }
+  .mvp-kda-value {
+    font-size: 2.5rem;
+  }
+  .mvp-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+@keyframes fadeInCardContent {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mvp-content-animate {
+  animation: fadeInCardContent 1s ease-out forwards;
+  opacity: 0; 
+}

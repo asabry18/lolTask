@@ -1,0 +1,21 @@
+:root{
+  height: 100%;
+}
+body {
+  background: 
+    linear-gradient(120deg, rgba(0,0,0,0.7) 0%, rgba(13,110,253,0.3) 100%),
+    url('../images/wallhaven-1kdzlg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  animation: bg-zoom 13s ease-in-out infinite alternate;
+  overflow-x: hidden;
+}
+
+@keyframes bg-zoom {
+  0% {
+    background-size: 100% 100%;
+  }
+  100% {
+    background-size: 112% 112%;
+  }
+}
+
