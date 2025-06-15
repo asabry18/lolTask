@@ -28,6 +28,24 @@ You can see stats for each team, find out who won, and click on any player to se
 
 ---
 
+## How to Download the Project to Your Desktop
+
+1. **Download the Project Files**  
+   - from the green button in the top called (code)
+     1. Download the ZIP file to your Desktop.
+     2. Right-click the ZIP file and choose **Extract All...**  
+     3. Choose your Desktop as the destination and click **Extract**.
+     4. You will see a folder named `lolTask` on your Desktop.
+
+   - If you are using Git (recommended):  
+     1. Open Command Prompt or PowerShell.
+     2. Run the following command to download the project to your Desktop:
+        ```sh
+        cd %USERPROFILE%\Desktop
+        git clone https://github.com/your-username/lolTask.git
+        ```
+     3. You will see a folder named `lolTask` on your Desktop.
+
 ## Folder Structure
 
 ```
