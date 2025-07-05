@@ -28,6 +28,24 @@ You can see stats for each team, find out who won, and click on any player to se
 
 ---
 
+## How to Download the Project to Your Desktop
+
+1. **Download the Project Files**  
+   - from the green button in the top called (code)
+     1. Download the ZIP file to your Desktop.
+     2. Right-click the ZIP file and choose **Extract All...**  
+     3. Choose your Desktop as the destination and click **Extract**.
+     4. You will see a folder named `lolTask` on your Desktop.
+
+   - If you are using Git (recommended):  
+     1. Open Command Prompt or PowerShell.
+     2. Run the following command to download the project to your Desktop:
+        ```sh
+        cd %USERPROFILE%\Desktop
+        git clone https://github.com/your-username/lolTask.git
+        ```
+     3. You will see a folder named `lolTask` on your Desktop.
+
 ## Folder Structure
 
 ```
@@ -45,7 +63,6 @@ Lol task/
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/) (a program that lets you run JavaScript on your computer)
-- [npm](https://www.npmjs.com/) (comes with Node.js, helps you install needed files)
 
 ---
 
@@ -60,7 +77,7 @@ You only need to do this once for each part.
 1. Open a terminal (Command Prompt or PowerShell).
 2. Go to the backend folder:
    ```sh
-   cd "Lol task\backend"
+   cd "lolTask\backend"
    ```
 3. Install the needed files:
    ```sh
@@ -72,7 +89,7 @@ You only need to do this once for each part.
 1. Open a new terminal window.
 2. Go to the frontend folder:
    ```sh
-   cd "Lol task\frontend"
+   cd "lolTask\frontend"
    ```
 3. Install the needed files:
    ```sh
