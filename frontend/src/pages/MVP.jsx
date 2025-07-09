@@ -62,7 +62,7 @@ export default function MVP() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const socket = io('http://localhost:3000');
+    const socket = io('https://loltask-production.up.railway.app');
     socket.emit('getPlayerStats', puuid);
     socket.on('playerStats', (data) => {
       setPlayer(data);

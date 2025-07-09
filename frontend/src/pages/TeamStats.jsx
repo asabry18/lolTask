@@ -41,7 +41,7 @@ export default function TeamStats() {
   hoverAudio.volume = 1;
 
   useEffect(() => {
-    const socket = io('http://localhost:3000');
+    const socket = io('https://loltask-production.up.railway.app');
     socket.emit('getStats');
     socket.on('stats', (data) => {
       setStats(data);
